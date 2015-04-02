@@ -46,16 +46,13 @@ package
 			player.x = 350;
 			player.y = 300;
 			
-			if (this.hitTestObject(Chest){	
+			//if (this.hitTestObject(Chest)){	
 			player.switchControls(CharBase.STATE_45_DEGREES);
-			}
+			//}
 			
 			
 			dieBlock = new DieBlock;
 			this.addChild(dieBlock);
-			
-			dieBlock = new DieBlock;
-				this.addChild(dieBlock);
 		}
 	}
 
