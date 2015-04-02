@@ -14,7 +14,6 @@ package
 		public static var player:Player;
 		private var enemies:Array;
 		private var chests:Vector.<Chest>;
-		private var scoreboard:ScoreBoard;
 		
 		public var dieBlock:DieBlock;
 		
@@ -47,16 +46,16 @@ package
 			player.x = 350;
 			player.y = 300;
 			
+			if (this.hitTestObject(Chest){	
 			player.switchControls(CharBase.STATE_45_DEGREES);
+			}
+			
 			
 			dieBlock = new DieBlock;
 			this.addChild(dieBlock);
 			
 			dieBlock = new DieBlock;
 				this.addChild(dieBlock);
-				
-			scoreboard = new ScoreBoard();
-			addChild(scoreboard);
 		}
 	}
 
